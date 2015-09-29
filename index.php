@@ -28,7 +28,7 @@ and open the template in the editor.
         include './util/formsChecker.php';
         
         if (isset($_POST["submit"])) {
-            checkField($_POST);
+                checkFields($_POST);
         }
 
         

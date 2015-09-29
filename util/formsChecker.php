@@ -1,6 +1,6 @@
 <?php
 
-function checkField($data) {
+function checkFields($data) {
 
     $persons = new Person();
     $message = new Message();

@@ -7,7 +7,7 @@ class Person{
         $data =  $pdoData->fetch();
         
         $temp = $pdoData->errorInfo();
-        //echo $temp[0];
+       
         if($temp[0] == 0){
             return $data[0];
         }
@@ -19,7 +19,6 @@ class Person{
         $pdoData = Person::getPDO()->prepare('SELECT login FROM `person` WHERE login="'.$val.'"');
         $pdoData->execute();
         $data =  $pdoData->fetch();
-        
         
         $temp = $pdoData->errorInfo();
         //echo $temp[0];
